@@ -15,7 +15,7 @@ while True:
     if stock_name == "Done":
         break
     if stock_name not in stock_prices:
-        print("Stock not found! please choose from available stock.")
+        print("Stock not found! please choose from available stocks.")
         continue
     try:
         quantity = int(input("Enter quantity: "))
@@ -60,7 +60,7 @@ else:
             item["total"],
         )
     print("-" * 40)
-    print("GRAND TOTAL INVESTEMENT:", grand_total)
+    print("GRAND TOTAL INVESTMENT:", grand_total)
     with open("portfolio_summary.txt", "w") as file:
         file.write("STOCK PORTFOLIO SUMMARY\n")
         file.write("=" * 30 + "\n")
